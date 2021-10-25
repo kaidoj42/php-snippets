@@ -1,0 +1,13 @@
+{
+    "name": "42matters/php-snippets",
+    "description": "PHP snippets to help to do few things",
+    "authors": [
+        {
+            "name": "kaido",
+            "email": "kaido@42matters.com"
+        }
+    ],
+    "require": {
+        "cocur/slugify": "^4.0"
+    }
+}

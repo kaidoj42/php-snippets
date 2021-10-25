@@ -30,3 +30,16 @@ Console output:
             ['cat_key' => 'GAME_CASUAL', 'name' => 'Casual', 'slug' => 'casual']
         ];
 ```
+
+You can also use JSON input:
+
+```php 
+    <?php 
+        return json_decode('[{
+		"genreId": 36,
+		"name": "Overall"
+	}, {
+		"genreId": 6014,
+		"name": "Games"
+	}]', true);
+```

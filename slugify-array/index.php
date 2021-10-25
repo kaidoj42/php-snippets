@@ -26,7 +26,8 @@ foreach ($input as $key => $row) {
     print("[");
     $r = [];
     foreach ($row as $k => $v) {
-        $r[] = sprintf("'%s' => '%s'", $k, $v);
+        $v = is_numeric($v) ? $v : "'" . $v . "'";
+        $r[] = sprintf("'%s' => %s", $k, $v);
     }
     print(implode(",", $r));
     print("],\r\n");
